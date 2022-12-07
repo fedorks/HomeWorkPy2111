@@ -63,6 +63,8 @@ out_numb = []
 for i in range(len(numb)):
     if numb[i] not in out_numb:
         out_numb.append(numb[i])
+    else:
+        out_numb.remove(numb[i]) 
 print(numb)
 print(out_numb)
 
