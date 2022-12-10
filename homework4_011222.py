@@ -57,14 +57,16 @@ n = int(input('Введите количество элементов после
 from random import randint
 numb = []
 for i in range(n):
-    numb.append(randint(0, 20))
+    numb.append(randint(0, 10))
+print(numb)
 
 out_numb = []
 for i in range(len(numb)):
     if numb[i] not in out_numb:
         out_numb.append(numb[i])
     else:
-        out_numb.remove(numb[i]) 
+        out_numb.remove(numb[i])
+        numb.remove(numb[i])
 print(numb)
 print(out_numb)
 
